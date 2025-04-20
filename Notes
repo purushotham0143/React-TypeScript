@@ -1,0 +1,95 @@
+//CodeEvualation Youtube channels
+React Notes
+*Actually we have inbuilt application if we use it our development will be late so we will  create  your Own application
+##Process 
+*How to create React application
+npx create-react-app my-app
+cd my-app
+npm start
+
+
+* How to install 3 version tailwindcss
+//npm install tailwindcss@3
+// npx tailwindcss@3 init
+// npm tailwindcss@3 -i ./ -o ./
+
+
+// To install React  vite
+1.npm create vite@latest
+2.give name of the folder 
+3.select react 
+4.select javascript ||typescript
+5.npm install  --To install Dependencys in our project 
+6.npm run dev -To run  the Projecct
+ 
+//To install tailwind css
+
+1.npm install tailwindcss @tailwindcss/vite
+//npm install for Dependencys 
+2.go to the vite.config.ts
+vite.config.ts
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'  // Import only this 
+export default defineConfig({
+  plugins: [
+    tailwindcss(), //And import this also
+  ],
+})
+3.in index.css ->@import "tailwindcss";
+click on the folder and open terminal the write npm run dev -you will ip addres then click on it
+
+*what is jsx:-we call it javascript+XML
+it is used to write  usedfriendly html code in javascript in ract
+this is used for code reusabulity in react
+/JSX-actually it is syntex extension of javascript
+Using Babel Libaray it will convert the  this html code into React code then React will creat the virtual Dom  
+
+*Components:-Here we havev to ways(Functional&class)
+
+*ways to apply css
+
+*props:parameters in js and this in html propertys means like in html we have id,class,style like this :-Here we can create Our own propertis  in react  and also we can use Existing  probs
+
+*Conditional rendering:-rendering Means Showing the content in the web page condition means if you click then it has to visible like this
+
+*React Events 
+
+*React List :-Like map
+*Form Handiling 
+
+*Fragments:-features the Allows Developers to group multiple elements together withput adding extra Nodes to the Dom
+*Advance Concepts
+
+-Components Life cycle Method :-To maintain the state of the Components we use this *This will work onyl for indudial versions only 
+
+-React Hooks:-Means Methods used to maintain the state of the Functional Compound
+-Rdux-Means this is libaray this is used to share the shareable data and also we can tranverse the data to any component in  react
+
+
+//About package files
+*robots.txt this is used to  allow and disallow chiyadaniki manam appudu aieti Deploy chistamo 
+manifest.json-menas eddi logo vuntundi browser 
+*reportwevital.js-this is used to measure the Performance of the server
+*setupTest.js-this is used to  set testing
+*gitgone-edi mana istam vachina files ni push chiyavachu likapothi ekkkda apukovachu
+*Ekkada manam nodemodules push chiyam appudina oka use mana github lo nunchi clone chisukoni run chiyali anti package.json vuntundi appudu terminal lo npm start ani kodithi nodemodules motam adi set cchostundi 
+
+**React is declearative
+**javascript-imparative 
+**deffing is used in react using Virtual Dom
+
+
+
+//Functional Compound
+1.function will return simple tsx
+2.One way communication it you are Not useing the state management in the code 
+ 
+
+//Class Compound
+1.reder Method Will invoke then it will return  tsx beause in calss we cant return anything 
+2.class will recive all in probs By default it will one parameter Prob //Here we have to use  the uisng the this.probs.name like this 
+3.Hooks are Predifined in the class
+
+
+
+

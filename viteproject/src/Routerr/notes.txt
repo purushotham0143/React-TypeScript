@@ -1,0 +1,21 @@
+npm i react-router-dom @types/react-router-dom  through this we are installing the react ka type script version
+ Explanation:
+react-router-dom → actual routing library for React.
+
+@types/react-router-dom → type definitions for TypeScript. 
+
+
+🧠 Why we use BrowserRouter in main.tsx (or index.tsx):
+In a React application, BrowserRouter is a component from React Router used to enable client-side routing.
+It watches the browser's URL and renders the corresponding components without reloading the page.
+
+ What BrowserRouter does:
+It listens to URL changes.
+
+Renders the right components based on the URL.
+
+Prevents full page reloads for a faster, smoother experience.
+
+//Dynamic Routing 
+1.useLocation -it will work if you wont give the value also
+2.useParams -Here we have to give me the value conform if not it will not work  
