@@ -1,5 +1,5 @@
 //Redux is a state management library Redux has main three Pillars 
-//when we make call to the  Actions will call the store and store will send the (eaction,existingstate) to the Reducer
+//when we make call to the  Actions will call the store and store will send the (action,existingstate) to the Reducer
 // 1.Actions - Actions are Events  We will dispatch the evetns  to strore 
 // 2.Strore  - (existing state) // this will be passed to reducer
 // 3.Reducer -(existing state ,action) we have in the  Reducer 
@@ -8,7 +8,7 @@
 
 
 //Why we use Redux :-we Normaly use Context to store the data but  we have one problem 
-//  it is for simple data only
+//  it is for simple data only 
 // we use Reducer for complex data
 // In redux we have one  plagin called persist in Context when we Refresh the state is also Refreshed 
 // but Here in Redux if we use this plugin  it will store the data in the local storage  state can be changed 
@@ -39,7 +39,7 @@
 // action is an object 
 //reduc is a flux store 
 //actions will raise an event then to store all this will go the reducer in a single pipe
-// to create this pipe we have a log  log means what actions are performed 
+// to create this pipe we have a log  means what actions are performed 
 //flux structer
 // {
 //     type:"bugAdded", // this means Action
@@ -102,7 +102,7 @@ function BugReducer(state=[],action){
 }
 
 //last step setup the store ->so we have to add the library
-// npm install redux
+// npm install redux 
 import { createStore } from "redux";
 const store=createStore(BugReducer);  // store created 
 console.log(store.getState());  // inital state
@@ -135,7 +135,7 @@ store.dispatch({
 console.log(store.getState());
 
 //If you want to Take the Values from the ui and from the user dinamically we create a function
-//create a button and handle this fucntions
+//create a button and handle this fucntions //we render this button in the UI 
 const addBug=description=>{
     store.dispatch({
         type:"bugAdded",

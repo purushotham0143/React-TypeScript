@@ -4,7 +4,7 @@
 // To share the data in multiple components
 //Previously we are passing in the probs
 
-import Dashbord from './dashbord'
+import Dashbord from './Dashbord'
 import { UserContext } from './userContext'
 export interface userType{
     name:string,

@@ -158,42 +158,41 @@
 
 
 //Private Routing
-import { NavLink, Route, Routes } from "react-router-dom";
-import Home from "./Routerr/Home";
-import Loginscrean from "./PrivateRoute/Loginscrean";
-import About from "./Routerr/about";
-import Contact from "./Routerr/Contact";
-import { Logincontext } from "./PrivateRoute/Logincontext";
-import { useState } from "react";
-import Privateroute from "./PrivateRoute/Privateroute";
+// import { NavLink, Route, Routes } from "react-router-dom";
+// import Home from "./Routerr/Home";
+// import Loginscrean from "./PrivateRoute/Loginscrean";
+// import About from "./Routerr/about";
+// import Contact from "./Routerr/Contact";
+// import { Logincontext } from "./PrivateRoute/Logincontext";
+// import { useState } from "react";
+// import Privateroute from "./PrivateRoute/Privateroute";
 
-
-const App=()=>{
-  const [name,setName]=useState<string|undefined>(undefined)
-  return(
-    <>
-    Username:{name}
-   <ul className="flex grid-4">
-    <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/login">Login</NavLink></li>
-    <li><NavLink to="/about">About</NavLink></li>
-    <li><NavLink to="/contact">Contact</NavLink></li>
-   </ul>
-   <Logincontext.Provider value={{name,setName}}>
-   <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/login" element={<Loginscrean/>}/>
-    {/* Making this both routes for Admin  means  private rotuign */} 
-  <Route path="/" element={<Privateroute/>}> 
-  <Route path="about" element={<About/>}/>
-  <Route path="contact" element={<Contact/>}/>
-  </Route>
-   </Routes>
-   </Logincontext.Provider>
-    </>
-  )
-}
-export default App;
+// const App=()=>{
+//   const [name,setName]=useState<string|undefined>(undefined)
+//   return(
+//     <>
+//     Username:{name}
+//    <ul className="flex grid-4">
+//     <li><NavLink to="/">Home</NavLink></li>
+//     <li><NavLink to="/login">Login</NavLink></li>
+//     <li><NavLink to="/about">About</NavLink></li>
+//     <li><NavLink to="/contact">Contact</NavLink></li>
+//    </ul>
+//    <Logincontext.Provider value={{name,setName}}>
+//    <Routes>
+//     <Route path="/" element={<Home/>}/>
+//     <Route path="/login" element={<Loginscrean/>}/>
+//     {/* Making this both routes for Admin  means  private rotuign */} 
+//   <Route path="/" element={<Privateroute/>}> 
+//   <Route path="about" element={<About/>}/>
+//   <Route path="contact" element={<Contact/>}/>
+//   </Route>
+//    </Routes>
+//    </Logincontext.Provider>
+//     </>
+//   )
+// }
+// export default App;
 
 
 
@@ -264,3 +263,18 @@ export default App;
 // }
 
 // export default App
+
+
+
+
+
+//Tasks
+// import Task from './Taskss/Task'
+// const App=()=>{
+//   return(
+//     <>
+//      <Task/>
+//     </>
+//   )
+// }
+// export default App;
